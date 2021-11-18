@@ -1,10 +1,22 @@
 <html>
-<a href="https://google.com">Google</a><br>
-<a href="https://discord.com/login">Discord</a><br>
-<a href="https://reddit.com">Reddit</a><br>
+  <style>
+  .centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+  </style>
+  <div class=centered>
+<button href="https://google.com">Google</button><br>
+<button href="https://discord.com/login">Discord</button><br>
+<button href="https://reddit.com">Reddit</button><br>
 
 <input id=lol type=text></input>
-<button onclick("window.location.href=document.getElementById("text").value")></button>
+<button onclick="window.location.href=document.getElementById("text").value"></button>
+
 <script>
 
 </script>
