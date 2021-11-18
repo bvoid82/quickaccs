@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html>
-  <style>
+<body>
+ <style>
   .centered {
   display: flex;
   flex-direction: column;
@@ -14,10 +16,18 @@
 <button href="https://discord.com/login">Discord</button><br>
 <button href="https://reddit.com">Reddit</button><br>
 
-<input id=lol type=text></input>
-<button onclick="window.location.href=document.getElementById("text").value"></button>
+<input id=text type=text></input>
+<button id=lol> </button>
 
 <script>
+document.getElementById("lol").onclick = function() {cock()};
 
+function cock() {
+  var stuff = document.getElementById("text").value;
+window.location.href= stuff
+}
 </script>
+
+</body>
 </html>
+
