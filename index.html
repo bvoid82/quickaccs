@@ -17,14 +17,15 @@
 <a href="https://reddit.com">Reddit</a><br>
 
 <input id=text type=text></input>
-<span id=lol>Go to URL</span>
+ <p>Do Not include the protocol (https://)</p>
+<button id=lol>Go to URL</button>
 
 <script>
 document.getElementById("lol").onclick = function() {cock()};
 
 function cock() {
   var stuff = document.getElementById("text").value;
-window.location.href= stuff
+window.location.href= "http://" + stuff
 }
 </script>
 
