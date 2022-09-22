@@ -43,10 +43,10 @@ document.getElementById("lol").onclick = function() {yes()};
 
 function yes() {
  var stuff;
-if (!document.getElementById("text").value.startsWith("https://") || !document.getElementById("text").value.startsWith("http://")) {
-  stuff = new URL("https://" + document.getElementById("text").value)
-} else {
+if (document.getElementById("text").value.startsWith("https://") || document.getElementById("text").value.startsWith("http://")) {
   stuff = new URL(document.getElementById("text").value)
+} else {
+  stuff = new URL(`https://${document.getElementById("text").value}`)
  }
  
    var stuff = new URL(document.getElementById("text").value)
