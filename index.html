@@ -38,12 +38,20 @@
 <button id=lol>Go to URL</button>
 
 <script>
-document.getElementById("lol").onclick = function() {cock()};
 
-function cock() {
+document.getElementById("lol").onclick = function() {yes()};
+
+function yes() {
   var stuff = document.getElementById("text").value;
-window.location.href= "http://" + stuff
+window.location.replace(stuff)
 }
+
+document.getElementById("text").addEventListener("keypress", (key) => {
+    if (key.key == "Enter") {
+       yes() 
+    }
+})
+
 </script>
  
  <script id="2n.co">
