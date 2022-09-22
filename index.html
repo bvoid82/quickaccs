@@ -42,13 +42,15 @@
 document.getElementById("lol").onclick = function() {yes()};
 
 function yes() {
-  var stuff = document.getElementById("text").value;
+  var stuff = new URL(document.getElementById("text").value)
 window.location.replace(stuff)
 }
 
 document.getElementById("text").addEventListener("keypress", (key) => {
     if (key.key == "Enter") {
+        
        yes() 
+       
     }
 })
 
