@@ -44,6 +44,9 @@ document.getElementById("lol").onclick = function() {yes()};
 function yes() {
   var stuff = new URL(document.getElementById("text").value)
 window.location.replace(stuff)
+if (!document.getElementById("text").value.startsWith("https://") || !document.getElementById("text").value.startsWith("http://")) {
+  stuff = new URL("https://" + document.getElementById("text").value)
+}
 }
 
 document.getElementById("text").addEventListener("keypress", (key) => {
