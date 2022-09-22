@@ -42,11 +42,15 @@
 document.getElementById("lol").onclick = function() {yes()};
 
 function yes() {
-  var stuff = new URL(document.getElementById("text").value)
-window.location.replace(stuff)
+ var stuff;
 if (!document.getElementById("text").value.startsWith("https://") || !document.getElementById("text").value.startsWith("http://")) {
   stuff = new URL("https://" + document.getElementById("text").value)
-}
+} else {
+  stuff = new URL(document.getElementById("text").value)
+ }
+ 
+   var stuff = new URL(document.getElementById("text").value)
+window.location.replace(stuff)
 }
 
 document.getElementById("text").addEventListener("keypress", (key) => {
