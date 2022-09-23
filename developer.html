@@ -60,12 +60,10 @@ document.getElementById("text").addEventListener("keypress", (key) => {
     }
 })
 
-document.getElementById("body").addEventListener("keypress", (key) => {
-    if (key.key == "Escape") {
-        
-       window.replace("https://quickaccs.benvoid.ml");
-       
-    }
+document.getElementById("body").addEventListener("keydown", (key) => {
+if (key.keyCode == 27) {
+    window.location.assign("https://quickaccs.benvoid.ml")
+}
 })
 </script>
  
