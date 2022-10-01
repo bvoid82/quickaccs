@@ -1,75 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
- <head>
-  <title>quickaccs Developer Page</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WL18TQ0GN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <title>quickaccs Developer Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="/style.css" rel="stylesheet">
+    <!-- <link href="/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WL18TQ0GN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-1WL18TQ0GN');
-</script>
- </head>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-1WL18TQ0GN');
+    </script>
+  </head>
 <body id="body">
-
- <style>
-  .centered {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
-}
-  </style>
-  <div class=centered>
+  <div class="centered">
     <a href="https://google.com">Google</a><br>
 <a href="https://dash.cloudflare.com/login/">Cloudflare</a><br>
 <a href="http://gitpod.io/workspaces/">Gitpod</a><br>
 <a href="https://vscode.dev/">Visual Studio Code</a><br>
    <a href="https://analytics.google.com/">Google Analytics</a><br>
-   <a href="https://lq16.gay/">HU</a><br>
+   <a href="https://translatereader.us">HU</a><br>
    <a href="javascript:var firebug=document.createElement('script');firebug.setAttribute('src','https://luphoria.com/fbl/fbl/firebug-lite-debug.js');document.body.appendChild(firebug);(function(){if(window.firebug.version){firebug.init();}else{setTimeout(arguments.callee);}})();void(firebug);">Firebug</a><br>
    <a href="https://github.com/bvoid82/quickaccs/">Github Repo</a><br>
 
-<input id=text type=text></input>
-<button id=lol>Go to URL</button>
+<input id="text" type="text">
+<button id="lol">Go to URL</button>
 
-<script>
+<script src="/developer.js" async></script>
 
-document.getElementById("lol").onclick = function() {yes()};
-
-function yes() {
- var stuff;
-if (document.getElementById("text").value.startsWith("https://") || document.getElementById("text").value.startsWith("http://")) {
-  stuff = new URL(document.getElementById("text").value)
-} else {
-  stuff = new URL(`https://${document.getElementById("text").value}`)
- }
- 
-window.location.assign(stuff)
-}
-
-document.getElementById("text").addEventListener("keypress", (key) => {
-    if (key.key == "Enter") {
-        
-       yes() 
-       
-    }
-})
-
-document.getElementById("body").addEventListener("keydown", (key) => {
-if (key.keyCode == 27) {
-    window.location.replace("https://quickaccs.benvoid.ml")
-}
-})
-</script>
- 
- <script id="2n.co">
-  fetch("https://2no.co/1vVHx7")
- </script>
+</div>
 
 </body>
 </html>

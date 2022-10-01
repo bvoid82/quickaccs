@@ -1,0 +1,20 @@
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+body {
+  background-color: #fd9c23;
+}
+a {
+  color: rgb(27, 0, 23);
+}
+#text {
+  width: 250px;
+}
+#lol {
+  color: rgb(27, 0, 23);
+}
