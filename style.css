@@ -9,7 +9,9 @@
 body {
   background-color: #fd9c23;
   background-image: url(/assets/7234235_preview.png);
-  backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(5p-x); */
+  backdrop-filter: blur(2px);
+  background-repeat: no-repeat;
 }
 a {
   color: rgb(114, 0, 114);
