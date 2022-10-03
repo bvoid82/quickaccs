@@ -8,7 +8,7 @@
 }
 body {
   background-color: #fd9c23;
-  background-image: url(./assets/7234235_preview.png);
+  background-image: url(/assets/7234235_preview.png);
   backdrop-filter: blur(5px);
 }
 a {
