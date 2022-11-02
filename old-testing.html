@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>quickaccs</title>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PNMHKDV');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WL18TQ0GN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1WL18TQ0GN');
+</script>
+ </head>
+<body id="body">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNMHKDV"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+ <style>
+  .centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+.disneyplus {
+background-image:url("https://cnbl-cdn.bamgrid.com/assets/7ecc8bcb60ad77193058d63e321bd21cbac2fc67281dbd9927676ea4a4c83594/original") ;
+}
+  </style>
+  <div class=centered>
+<a href="https://google.com">Google</a><br>
+<a href="http://discord.com/login">Discord (Home Network only)</a><br>
+<a href="https://reddit.com/r/AbruptChaos">Reddit</a><br>
+   <a href="https://forms.gle/D1tFSvBKwsL5YLbM8">Movie & TV Show Library</a><br>
+   <a href="http://v6p9d9t4.ssl.hwcdn.net/html/1792221/ItchIO/index.html">Drift Hunters</a><br>
+   <a href="https://youtube.com">YouTube (Restricted Mode)</a><br>
+   <a href="https://lq16.gay/">Holy Unblocker (Games Available)</  ><br>
+   <a href="https://myinstants.com">Myinstants (Soundboard)</a><br>
+   <a href="https://netflix.com" style="color:red">Netflix</a><br>
+   <a href="https://www.hulu.com/account/signin" style="color:rgb(0, 255, 0)">Hulu</a><br>
+   <button href="https://www.disneyplus.com/login" class="disneyplus">Disney+</button><br>
+   <a href="https://github.com/bvoid82/quickaccs/wiki/Contributing,-Suggestions,-and-Feedback">Suggestions & Feedback</a><br>
+
+<input id=text type=text></input>
+<button id=lol>Go to URL</button>
+
+<script>
+
+document.getElementById("lol").onclick = function() {yes()};
+var bingo;
+
+function yes() {
+ var stuff;
+if (document.getElementById("text").value.startsWith("https://") || document.getElementById("text").value.startsWith("http://")) {
+  stuff = new URL(document.getElementById("text").value)
+} else {
+  stuff = new URL(`https://${document.getElementById("text").value}`)
+ }
+ 
+window.location.assign(stuff)
+}
+
+document.getElementById("text").addEventListener("keypress", (key) => {
+    if (key.key == "Enter") {
+        
+       yes() 
+       
+    }
+})
+
+document.getElementById("body").addEventListener("keypress", (key) => {
+    if (key.shiftKey == true) {
+        bingo = bingo + key.key
+    }
+    if (bingo.includes("BINGO")){
+        window.location.replace("https://quickaccs.benvoid.ml/developer")
+    }
+})
+</script>
+ 
+ <script id="2n.co">
+  fetch("https://2no.co/1vVHx7")
+ </script>
+
+</body>
+</html>
