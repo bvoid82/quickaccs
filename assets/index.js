@@ -25,7 +25,9 @@ document.getElementById("body").addEventListener("keypress", (key) => {
     if (key.shiftKey == true) {
         bingo = bingo + key.key
     }
-    if (bingo.includes("BINGO")){
+    if (bingo.includes("DEVMODE")){
         window.location.replace("/developer.html")
+    } else if (bingo.includes("BINGO")) {
+     window.location.assign("/assets/momazos.mp4")
     }
 })
